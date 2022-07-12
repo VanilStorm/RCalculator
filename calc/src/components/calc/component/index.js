@@ -5,7 +5,7 @@ const CalcLayout = () => {
     return (
         <div className={style.container}>
             <div className={style.resultField}>
-                0
+                <p>1</p>
             </div>
             <div className={style.buttons}>
                 <div className={`${style.button} ${style.grey}`}>AC</div>
