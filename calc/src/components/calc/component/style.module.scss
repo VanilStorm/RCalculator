@@ -1,0 +1,77 @@
+@import "../../../styles/colors";
+@import "../../../styles/fonts";
+
+.container {
+  width: 20vw;
+  height: 60vh;
+
+  border-radius: 15px;
+  padding: 18px;
+
+  background-color: $calcBackgroundColor;
+  color: $btnWhite;
+
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+
+
+}
+
+.buttons {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
+  grid-template-areas:
+  "ac p-m percent division"
+  "seven eight nine multi"
+  "for five six minus"
+  "one two three plus"
+  "zero zero dot equal"
+
+;
+  gap: 10px;
+
+  .button {
+    width: 45px;
+    height: 45px;
+
+    text-align: center;
+    line-height: 45px;
+
+    padding: 5px;
+    border-radius: 50%;
+
+    background-color: $btnBlack-Gray;
+
+    cursor: pointer;
+    user-select: none;
+
+    transition: .3s;
+  }
+
+  .button:hover {
+    filter: brightness(110%);
+  }
+
+  .button:active {
+    filter: brightness(90%);
+  }
+
+  .zero {
+    grid-area: zero;
+    width: 73%;
+    border-radius: 34px;
+
+    text-align: start;
+    padding-left: 20px;
+  }
+
+  .orange {
+    background-color: $btnOrange;
+  }
+
+  .grey {
+    background-color: $btnGrey;
+  }
+}

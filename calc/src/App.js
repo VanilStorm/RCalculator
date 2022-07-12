@@ -1,6 +1,7 @@
-import './App.css';
+import './App.scss';
 import {useDispatch, useSelector} from "react-redux";
 import {testAC} from "./redux/actions/testActions";
+import CalcContainer from "./components/calc/container/CalcContainer";
 
 function App() {
   const dispatch = useDispatch();
@@ -14,7 +15,8 @@ function App() {
   }
 
   return (
-      <button onClick={testClick}>Test</button>
+      // <button onClick={testClick}>Test</button>
+      <CalcContainer/>
   );
 }
 
